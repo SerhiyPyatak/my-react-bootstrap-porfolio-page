@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --gradiented-yellow-orange:   linear-gradient(90deg, rgba(255,190,74,1) 44%, rgba(255,100,71,0.9752275910364145) 64%);
+  --orange:                     #ff8548;
+  --red:                        #ca1616;
+}
+/**************************** NAVBAR ************************************/
+.nav-link, .nav-hamburger {
+  color:                          var(--orange) !important;
+  background:                     var(--gradiented-yellow-orange);
+  -webkit-background-clip:        text;
+  -webkit-text-fill-color:        transparent;
+}
+
+.nav-link {
+  text-transform:                 uppercase;
+  letter-spacing:                 0.0375rem;
+  margin: 0 0.75rem;
+}
+
+.nav-hamburger, .navbar-toggler {
+  color:                          var(--orange) !important;
+  background:                     var(--gradiented-yellow-orange);
+  -webkit-background-clip:        text;
+  -webkit-text-fill-color:        transparent;
+}
+
+/* Navlink hover effect */
+.nav-item:hover, .nav-item:active {
+  border-top: 0.0625rem solid var(--red);
+  border-bottom: 0.0625rem solid var(--red);
+}
+/* */
+
+
+/*---------------------*/
+/*
+.navbar-toggler {
+  color:                          var(--orange) !important;
+  background:                     var(--gradiented-yellow-orange);
+}
+*/
