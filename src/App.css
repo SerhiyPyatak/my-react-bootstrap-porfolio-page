@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500;600;700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -41,6 +43,7 @@
   --gradiented-yellow-orange:   linear-gradient(90deg, rgba(255,190,74,1) 44%, rgba(255,100,71,0.9752275910364145) 64%);
   --orange:                     #ff8548;
   --red:                        #ca1616;
+  --yellow:                     rgb(255,190,74);
 }
 /**************************** NAVBAR ************************************/
 .nav-link, .nav-hamburger {
@@ -68,9 +71,38 @@
   border-top: 0.0625rem solid var(--red);
   border-bottom: 0.0625rem solid var(--red);
 }
-/* */
 
+/**************************** HERO ************************************/
+.hero-wrapper {
+  background: url('hero-background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.hero-info {
+  text-transform: uppercase;
+  color: var(--yellow);
+  text-align: center;
+}
+
+.hero-info > h1 {
+  font-weight: 600;
+  letter-spacing: 25px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 3.5em;
+  position: relative;
+    top: -3rem;
+}
+
+.typed-text {
+  color: var(--orange);
+  font-size: 1.8em;
+  letter-spacing: 3px;
+}
 /*---------------------*/
 /*
 .navbar-toggler {
