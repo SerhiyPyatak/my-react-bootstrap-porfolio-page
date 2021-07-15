@@ -46,6 +46,10 @@
   --yellow:                     rgb(255,190,74);
 }
 /**************************** NAVBAR ************************************/
+.navbar {
+  z-index: 2;
+}
+
 .nav-link, .nav-hamburger {
   color:                          var(--orange) !important;
   background:                     var(--gradiented-yellow-orange);
@@ -87,6 +91,7 @@
   text-transform: uppercase;
   color: var(--yellow);
   text-align: center;
+  z-index: 2;
 }
 
 .hero-info > h1 {
@@ -103,10 +108,11 @@
   font-size: 1.8em;
   letter-spacing: 3px;
 }
-/*---------------------*/
-/*
-.navbar-toggler {
-  color:                          var(--orange) !important;
-  background:                     var(--gradiented-yellow-orange);
+
+/**************************** PARTICLES ************************************/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
 }
-*/
